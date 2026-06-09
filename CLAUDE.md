@@ -20,6 +20,31 @@ git commit -m "変更内容の説明"
 git push origin main
 ```
 
+## デプロイ先
+
+https://TOzaki21.github.io/task-board/
+
+`main` ブランチへのプッシュで GitHub Actions が自動ビルド・デプロイする。  
+ワークフロー定義: `.github/workflows/deploy.yml`
+
+## 技術スタック
+
+| 用途 | 技術 |
+|---|---|
+| UI ライブラリ | React 18 |
+| ビルドツール | Vite 6 |
+| スタイリング | CSS (App.css) |
+| 状態管理 | React useState / useEffect |
+| データ永続化 | localStorage |
+| デプロイ | GitHub Pages (GitHub Actions) |
+
+## コンポーネント命名規約
+
+- コンポーネントファイルは **PascalCase** （例: `TaskItem.jsx`）
+- CSS クラス名は **kebab-case** （例: `.task-item`, `.delete-button`）
+- カスタムフックは `use` プレフィックス（例: `useTasks`）
+- localStorage のキーは `task-board-` プレフィックス（例: `task-board-tasks`）
+
 ## 開発ガイドライン
 
 - 不要なコメントは書かない。WHY が自明でない場合のみ記述する。
