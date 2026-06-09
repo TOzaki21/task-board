@@ -22,7 +22,7 @@ git push origin main
 
 ## デプロイ先
 
-https://TOzaki21.github.io/task-board/
+https://tozaki21.github.io/task-board/
 
 `main` ブランチへのプッシュで GitHub Actions が自動ビルド・デプロイする。  
 ワークフロー定義: `.github/workflows/deploy.yml`
